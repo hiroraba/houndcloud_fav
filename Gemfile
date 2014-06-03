@@ -39,6 +39,10 @@ gem 'rspec-rails'
 gem 'capybara', '>= 2.2.0'
 gem 'spork-rails', '4.0.0'
 gem 'coveralls'
+gem 'terminal-notifier-guard'
+gem 'guard-livereload'
+gem 'guard-rspec'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
