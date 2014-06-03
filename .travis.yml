@@ -6,6 +6,9 @@ rvm:
 
 gemfile:
   - Gemfile
+  
+env:
+  SECRET_KEY_BASE="$(bundle exec rake secret)"
 
 script:
   - bundle exec rspec
