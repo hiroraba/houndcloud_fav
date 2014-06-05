@@ -5,4 +5,8 @@ class HoundcloudController < ApplicationController
 
   def show
   end
+
+  def find
+    @param = params[:search_string]
+  end
 end
