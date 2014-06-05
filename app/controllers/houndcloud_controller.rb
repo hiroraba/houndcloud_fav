@@ -1,4 +1,4 @@
-class HoundcloudController < ApplicationController
+class HoundcloudController < BaseController
 
   def index
   end
@@ -7,6 +7,5 @@ class HoundcloudController < ApplicationController
   end
 
   def find
-    @param = params[:search_string]
   end
 end

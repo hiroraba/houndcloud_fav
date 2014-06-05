@@ -43,6 +43,10 @@ gem 'terminal-notifier-guard'
 gem 'guard-livereload'
 gem 'guard-rspec'
 
+# SoundCloud Omniauth
+gem 'omniauth'
+gem 'omniauth-soundcloud'
+gem 'settingslogic'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

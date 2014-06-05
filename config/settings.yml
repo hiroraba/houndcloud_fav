@@ -1,0 +1,13 @@
+defaults: &defaults
+
+development:
+  <<: *defaults
+  soundcloud:
+    client_id: <%= ENV['CLIENT_ID_SC'] %>
+    client_secret: <%= ENV['SECRET_ID_SC'] %>
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
