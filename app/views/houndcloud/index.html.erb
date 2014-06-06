@@ -1,9 +1,15 @@
 <div class="logo">
   HoundCloud Fav  
 </div>
+<% if current_user %>
+<%= current_user.name %>
 <div class="form">
   <%= form_tag('/find', :method => :get) do %>
   <%= text_field_tag :search_string %>
   <%= submit_tag "search" %>
-  <%end %>
+  <%= link_to 'logout', '/logout'  %>
+  <% end %>
+  <% else %>
+  <%= link_to 'login', '/auth/soundcloud' %>
+  <% end %>
 </div>

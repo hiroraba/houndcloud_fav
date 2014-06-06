@@ -3,5 +3,5 @@ HoundcloudFav::Application.routes.draw do
   match 'find', :to => "houndcloud#find", :via => "get"
   match 'auth/:provider/callback', :to => 'sessions#callback', :via => "get"
   match 'auth/:provider/callback', :to => 'sessions#callback', :via => "post"
-  match 'logout', :to => 'sessions#destroy', :via => "post"
+  match 'logout', :to => 'sessions#destroy', :via => "get"
 end
